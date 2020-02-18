@@ -1,0 +1,12 @@
+.caja{
+         background-color:green;
+         min-height: 400px;
+         width: 400px;
+}
+
+.boton{
+	height: 60px;
+        border-radius: 30px;
+        cursor: pointer;
+        position:relative;
+}
