@@ -11,25 +11,32 @@ window.onload = function() {
   );
 
   //Capturar evento menu
+  var tiempoTotal = 60;
+  document
+    .getElementById("botonMenu")
+    .addEventListener("click", ocultarMostrar);
 
-  document.getElementById("botonMenu").addEventListener("click", ocultarMostrar);
-
-  function ocultarMostrar(){
-      let menu = document.getElementById("menu");
-      let juego = document.getElementById("juego");
-      let pantallaPos = document.getElementById("posJuego");
-      menu.style.display="none";
-      juego.style.display="block";
-      setTimeout(function(){
-        juego.style.display="none";
-        pantallaPos.style.display="block";
-      },5000);
+  function ocultarMostrar() {
+    let menu = document.getElementById("menu");
+    let juego = document.getElementById("juego");
+    let pantallaPos = document.getElementById("posJuego");
+    menu.style.display = "none";
+    juego.style.display = "block";
+    setTimeout(function() {
+      juego.style.display = "none";
+      pantallaPos.style.display = "block";
+    }, 60000);
   }
+  setTimeout(function() {
+    let cuentaAtras = document.getElementById("cuentaAtras");
+    tiempoTotal -= 1;
+    cuentaAtras.innerHTML = tiempoTotal;
+  }, 1000);
 
   document.getElementById("volverAtras").addEventListener("click", actualizar);
 
-  function actualizar(){
-      location.reload(true);
+  function actualizar() {
+    location.reload(true);
   }
 
   document.getElementById("volverMenu").addEventListener("click", actualizar);
