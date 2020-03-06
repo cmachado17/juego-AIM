@@ -1,0 +1,24 @@
+body{
+        background-image: url('img/fondo.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+}
+
+#juego, #posJuego{
+        display:none;
+}
+
+.caja{
+         background-color:green;
+         min-height: 400px;
+         width: 400px;
+}
+
+.boton{
+	height: 60px;
+        border-radius: 30px;
+        cursor: pointer;
+        position:relative;
+}

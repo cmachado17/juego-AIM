@@ -1,17 +1,20 @@
 window.onload = function() {
   //Prevenir el uso de tecla enter
-  window.addEventListener(
-    "keypress",
-    function(event) {
-      if (event.keyCode == 13) {
-        event.preventDefault();
-      }
-    },
-    false
-  );
+  // window.addEventListener(
+  //   "keypress",
+  //   function(event) {
+  //     if (event.keyCode == 13) {
+  //       event.preventDefault();
+  //     }
+  //   },
+  //   false
+  // );
+ //Tiempo
+
+ var tiempoTotal = 10;
 
   //Capturar evento menu
-  var tiempoTotal = 60;
+ 
   document
     .getElementById("botonMenu")
     .addEventListener("click", ocultarMostrar);
@@ -22,16 +25,23 @@ window.onload = function() {
     let pantallaPos = document.getElementById("posJuego");
     menu.style.display = "none";
     juego.style.display = "block";
+
+    //Cuenta atras
+    window.setInterval(function() {
+      let cuentaAtras = document.getElementById("cuentaAtras");
+      tiempoTotal -= 1;
+      cuentaAtras.innerHTML = tiempoTotal;
+    }, 1000);
+
+    //Tiempo de juego
     setTimeout(function() {
       juego.style.display = "none";
       pantallaPos.style.display = "block";
-    }, 60000);
+    }, 10000);
   }
-  setTimeout(function() {
-    let cuentaAtras = document.getElementById("cuentaAtras");
-    tiempoTotal -= 1;
-    cuentaAtras.innerHTML = tiempoTotal;
-  }, 1000);
+
+ 
+
 
   document.getElementById("volverAtras").addEventListener("click", actualizar);
 
