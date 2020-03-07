@@ -1,35 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <title>Juego AIM</title>
-    <link rel="stylesheet" type="text/css" href="estilos/estilos.css" />
-    <script src="main.js"></script>
 
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego AIM</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="estilos/estilos.css" />
+</head>
 
-  <body>
+<body>
+  <header class="bg-danger mb-4 text-center">
     <h1>Juego AIM1</h1>
-    <div id="menu">
+  </header>
+  <div class="container">
+    <div id="menu" class="text-justify">
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore beatae
         eos similique, aliquid ad perferendis est blanditiis totam eius dolorem
         cumque natus corrupti quas mollitia rem, quaerat quo saepe ea.
       </p>
-      <button id="botonMenu">Empieza a jugar!</button>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste quae ut numquam ipsum quidem sint earum voluptas
+        harum id quas, expedita provident rerum quis soluta aperiam quasi sit tempora et?
+      </p>
+      <div class="text-center">
+        <button id="botonMenu" class="btn btn-success">Empieza a jugar!</button>
+      </div>
     </div>
-    <div id="juego">
+    <div id="juego" class="my-4">
+    
       <p>Puntaje:<span id="contador">0</span></p>
-      <p>Tiempo:<span id="cuentaAtras">10</span></p>
+      <p>Tiempo:<span id="cuentaAtras">5</span></p>
       <button id="volverAtras">Volver</button>
-      <div class="caja">
+      <div class="caja mx-auto">
         <button id="boton" class="boton">Push me</button>
       </div>
     </div>
     <div id="posJuego">
-      <h2>Gracias por jugar!</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit amet illum, eaque modi, cum dolor voluptas velit blanditiis, similique itaque praesentium quam sequi! Quidem laboriosam fuga numquam voluptates corrupti commodi!</p>
-      <div id="mostrarPuntaje"></div>
-      <button id="volverMenu">Volver al menu</button>
+      <div class="text-center">
+        <h2>Gracias por jugar!</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit amet illum, eaque modi, cum dolor voluptas
+          velit
+          blanditiis, similique itaque praesentium quam sequi! Quidem laboriosam fuga numquam voluptates corrupti
+          commodi!
+        </p>
+        <div id="mostrarPuntaje"></div>
+        <button id="volverMenu" class="btn btn-success">Volver al menu</button>
+      </div>
     </div>
-  </body>
+
+  </div>
+  <!-- <footer class="text-center">
+    <p>2020 <a href="https://github.com/cmachado17" target="_blank">cmachado17</a></p>
+  </footer> -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <script src="main.js"></script>
+</body>
+
 </html>
