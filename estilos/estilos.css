@@ -1,11 +1,21 @@
-body{
+/* body{
         background-image: url('img/fondo.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
+} */
+html {
+  min-height: 100%;
+  position: relative;
 }
-
+body {
+  margin: 0;
+  margin-bottom: 40px;
+}
+header{
+        min-height: 150px;
+}
 #juego, #posJuego{
         display:none;
 }
@@ -13,7 +23,7 @@ body{
 .caja{
          background-color:green;
          min-height: 400px;
-         width: 400px;
+         width: 80%;
 }
 
 .boton{
@@ -22,3 +32,11 @@ body{
         cursor: pointer;
         position:relative;
 }
+footer {
+        background-color: black;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 40px;
+        color: white;
+      }
