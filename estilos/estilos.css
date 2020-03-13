@@ -1,10 +1,4 @@
-/* body{
-        background-image: url('img/fondo.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
-} */
+
 html {
   min-height: 100%;
   position: relative;
@@ -13,30 +7,34 @@ body {
   margin: 0;
   margin-bottom: 40px;
 }
-header{
-        min-height: 150px;
-}
-#juego, #posJuego{
-        display:none;
+
+#juego,
+#posJuego {
+  display: none;
 }
 
-.caja{
-         background-color:green;
-         min-height: 400px;
-         width: 80%;
+.caja {
+  background-color: green;
+  min-height: 350px;
+  width: 80%;
+  -webkit-box-shadow: 0px 0px 44px 3px rgba(5,3,5,0.82);
+-moz-box-shadow: 0px 0px 44px 3px rgba(5,3,5,0.82);
+box-shadow: 0px 0px 44px 3px rgba(5,3,5,0.82);
 }
 
-.boton{
-	height: 60px;
-        border-radius: 30px;
-        cursor: pointer;
-        position:relative;
+
+.boton {
+  height: 60px;
+  border-radius: 30px;
+  cursor: pointer;
+  position: relative;
 }
+
 footer {
-        background-color: black;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 40px;
-        color: white;
-      }
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  color: white;
+}
